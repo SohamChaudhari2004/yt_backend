@@ -1,3 +1,5 @@
+import { application } from "express"
+
 class ApiResponse {
   constructor(statusCode, data, message = "success") {
     this.statusCode = statusCode
@@ -6,3 +8,6 @@ class ApiResponse {
     this.success = statusCode < 400 
   }
 }
+
+
+export default ApiResponse
